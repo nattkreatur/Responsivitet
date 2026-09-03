@@ -1,0 +1,53 @@
+/*CSS för båda sidor*/
+body{
+    margin: 0 
+    /*Behövs för att ta bort webbläsarens förinställda marginaler.
+    Det blir annars en vit kantlinje runt alltihop*/
+}
+
+/*CSS för flagga*/
+.rectangle{
+    display: flex;
+    justify-content: center;
+    width: 80%; /*% av webbläsarfönstret*/
+    aspect-ratio: 2 / 1; /*ser till att rektangeln alltid behåller samma ratio*/
+    background-color: blue;
+    border: 0.5rem darkblue solid;
+}
+.circle{
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 0.5rem yellowgreen solid;
+    align-items: center;
+}
+
+/*CSS för boxar*/
+.container{
+    display:flex;
+    flex-wrap: wrap; /*tillåter content att lägga sig på multipla rader*/
+    width: 100%;
+    height: 100vh; /*viewport height. Ser till så att hela skärmens höjd fylls. Att använda % funkar inte */
+    background-color: blueviolet;/*Behövs inte längre men jag använde lila färg för felsökning av boxarna, lämnar den här för lärarens skull*/
+}
+.box1{
+    background-color: red;
+    width: 50%;
+    height: 50%;
+}
+.box2{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+}
+.box3{
+    background-color: green;
+    width: 50%;
+    height: 50%;
+}
+.box4{
+    background-color: yellow;
+    width: 50%;
+    height: 50%;
+}
